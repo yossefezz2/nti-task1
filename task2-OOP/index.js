@@ -1,4 +1,4 @@
-
+    
 let localStorageDataStudens = JSON.parse(localStorage.getItem('studens'))
 let localStorageDataTeachers = JSON.parse(localStorage.getItem('Teachers'))
 let studensArr, TeachersArr
