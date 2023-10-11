@@ -1,0 +1,14 @@
+users 
+{
+    id
+    name
+    age
+    email
+    addresses : [
+        {addres.addressType:"", addres.addressDetails:""}
+    ]
+}
+
+add user => inputs => name, age, email, defaults => addresses [], id: date
+add address to user => address details, type => push addresses
+
