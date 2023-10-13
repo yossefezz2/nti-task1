@@ -1,0 +1,15 @@
+form, nav, p{
+    margin-left: 20px;
+}
+body{
+    background-color: white;
+    color: black;
+    min-height: 100vh;
+    margin-left: 0px;
+}
+.mainClass{
+    margin-left: 0px;
+    position: fixed;
+    bottom: 0;
+    min-width: 100%;
+}

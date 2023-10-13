@@ -1,0 +1,28 @@
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>#</th>
+            <th>title</th>
+            <th>email</th>
+            <th>Actions</th>
+
+        </tr>
+    </thead>
+    <tbody>
+        {{#each task}}
+        <tr>
+            <td>{{id}}</td>
+            <td>{{title}}</td>
+            <td>{{email}}</td>
+            <td>
+                <a href="/single/{{_id}}" class="btn btn-sucess mx-2">Show</a>
+                {{#unless status}}
+                <a class="btn btn-primary mx-2" href="/activate/{{id}}">Activate task</a>
+                {{/unless}}
+                <a href="/edit/{{id}}" class="btn btn-warning mx-2">Edit</a>
+                <a href="/del/{{id}}" class="btn btn-danger mx-2">Delete</a>
+            </td>
+        </tr>
+        {{/each}}
+    </tbody>
+</table>
