@@ -1,9 +1,8 @@
 
 <div class="container">
     <input type="text" class="form-control w-50 my-4" 
-    placeholder="enter your name" [(ngModel)]="model" name="model" >
-    <button type="button" class="btn btn-primary" 
-    (click)="filterPost()">filter Posts</button>
+    placeholder="enter your name" [(ngModel)]="model" name="model" (input)="filterPost()">
+    
     <table class="table table-hover table-striped table-bordered " >
         <thead class="table-dark">
             <tr>
